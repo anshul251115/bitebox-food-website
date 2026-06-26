@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Images/favicon/favicon-package/favicon.ico">
+    <style>
+               
+
+
+             *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+            width: 100%;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            padding: 15px 20px;
+        }
+
+        nav a:hover{
+            color: blue;
+        }
+
+        nav li:last-child a{
+            background-color: red;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+  
+        nav li:last-child a{
+            background-color: red;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        ul
+        {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: auto;
+            gap: 40px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 3px solid #333; 
+            width: 100%;
+            margin: 0;
+            background-color: #1e1d1d;
+        }
+        
+        .temp{
+            color: red;
+            font-weight: bold;
+            /* border-bottom: 2px solid red; */
+            padding-bottom: 4px;
+        }
+
+        img {
+            display: inline-block;
+            margin-right: 50px; 
+            width: 180px;
+        }
+
+        nav a
+        {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        } 
+        .formdiv
+        {
+            border: 2px solid;
+            border-radius: 12px;
+            margin: auto;
+            padding-top: 10px;
+            padding-left: 150px;
+            /* font-size: 25px; */
+            background-color: blue;
+            height: 500px;
+            width: 650px;
+       }
+        button
+        {
+            margin: 25px;
+            border: 2px solid ;
+            border-radius: 15px;
+            /* font-size: 25px; */
+            background-color: aqua;
+            width: 450px;
+        }
+        input
+        {
+            border: 2px solid ;
+            border-radius: 12px;
+            /* font-size: 25px; */
+            background-color: blue;
+            color: white 
+            /* width: 500px;      */
+        }
+        ::placeholder
+        {
+            width: 200px;
+            color: white;
+        }
+       .fdiv
+       {
+        margin: 75px;
+       }
+       html
+       {
+        background-color: rebeccapurple;
+       }
+       .adc
+       {
+           color: red;
+       }
+       .temp1
+       {
+        color: red;
+            font-weight: bold;
+            /* border-bottom: 2px solid red; */
+            padding-bottom: 4px;
+            background-color: red;
+            padding: 6px 12px;
+            border-radius: 5px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+       
+        <nav>
+            <div class="navigation">
+                <img src="Images/biteboxlogo.png"  alt="Bitebox Logo">
+                <ul>   
+                    <li class="temp"><a href="dash.html"><i class="fa-solid fa-burger"></i>Dashboard</a>
+
+                    <li class="temp"><a href="./menu.html"><i class="fa-solid fa-bars"></i> Menu</a></li>
+                    <li class="temp"><a href="./home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="temp"><a href="./bitedeals.html"><i class="fa-solid fa-drumstick-bite"></i> BiteDeals</a></li>
+                    <li class="temp"><a href="./cart.html"><i class="fa-solid fa-cart-arrow-down"></i> Cart</a></li>
+                    <li class="temp1"><a href="signup.html"><i class="fa-solid fa-user-plus"></i>Signup</a></li>
+                    <li class="temp"><a href="./login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+     
+    </header>
+    
+      
+       <div class="fdiv"></div>
+    <div class = "formdiv">
+  <form >
+     <h1>
+        Signup form
+    </h1>
+    <label for="">Enter Your Name</label><br>
+    <input type="text" placeholder="Enter Your Name"><br>
+    <label> Gender:</label>
+    <input type="radio" name ="gender value=male"/>Male
+    <input type="radio" name ="gender value=female"/>female
+    <input type="radio" name ="gender value=other"/>other       <br>
+    <label for="">Enter Your Date of birth</label><br>
+    <input type="date" placeholder="Enter Your Date of birth"><br>
+    <label for="">Enter Your Address</label><br>
+    <input type="text" placeholder="Enter Your Address"><br>
+        <label for="">Enter Your Usernmae </label><br>
+        <input type="email" placeholder="Enter Your Usernmae"><br>
+ <label for="">Create Password </label><br>
+        <input type="password" placeholder="Enter Your new Password"><br>
+        <label for="">Confirm Password </label><br>
+        <input type="password" placeholder="Cofirm Password "><br>
+
+        <button type="submit"> Login</button><br>
+
+
+        Alredy Have an account ?<a class="adc"  href="login.html">Login</a>
+
+    </form>
+    </div>
+</body>
+</html>
